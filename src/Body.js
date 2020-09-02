@@ -10,16 +10,10 @@ function Body() {
                 <img src="/assets/profile.jpg" alt="Alpesh Jadav"/>
             </div>
             <div className="name">
-                <h1>Alpesh Jadav</h1>
+                <h1><span className="first-name">Alpesh<div className="body__line1"></div></span> <span className="last-name">Jadav <div className="body__line2"></div></span></h1>
             </div>
             </div>
-            <div className="body__lineContainer">
-                <div className="body__line1">
-                
-                </div>
-                <div className="body__line2"></div>
-            </div>
-            <div className="circle"></div>
+      
         </div>
     )
 }
