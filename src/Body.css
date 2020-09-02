@@ -1,90 +1,137 @@
-
 .body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 .body__profile {
-    border: 2px solid #ffffff;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 100px;
-    z-index: 1 !important;
-    
-}
-.body__profile img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    z-index: 99 !important;
+	border: 2px solid #ffffff;
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-top: 100px;
+	z-index: 1 !important;
+	background-color: rgb(20, 20, 56);
+	overflow: hidden !important;
 }
 
-.body__lineContainer{
-    width: 100%;
-    display: grid;
-    place-items: center;
+.spinner-container {
+	display: none;
+	position: absolute;
+	transition: 300ms ease-in-out;
 }
-.body__line1{
-    background: purple;
-    width: 480px;
-    height: 10px;
-    margin-top: -20px;
-    border-radius: 20px;
+.spinner {
+	position: absolute;
+	background-color: rgb(12, 5, 19);
+	border-radius: 30%;
+	width: 230px;
+	height: 250px;
+}
+.spinner2 {
+	background-color: rgb(12, 5, 19);
+	border-radius: 30%;
+	width: 230px;
+	height: 250px;
+	transform: rotate(290deg);
+}
+.body__profile:hover .spinner-container {
+	display: flex;
+	animation-name: move;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.body__profile:hover .spinner,
+.body__profile:hover .spinner2 {
+	width: 275px;
+	height: 295px;
+}
+.body__profile:hover .spinner-container .spinner {
+	animation-name: move;
+	animation-duration: 7.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes move {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 
-    
+.body__profile img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	z-index: 99 !important;
+	border: 2px solid white;
 }
-.body__line2{
-    background: #ffffff;
-    width: 325px;
-    height: 10px;
-    margin-top: -20px;
-    border-radius: 20px;
+
+.body__lineContainer {
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+.body__line1 {
+	background: purple;
+	width: 480px;
+	height: 10px;
+	margin-top: -20px;
+	border-radius: 20px;
+}
+.body__line2 {
+	background: #ffffff;
+	width: 325px;
+	height: 10px;
+	margin-top: -20px;
+	border-radius: 20px;
 }
 
 .container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
 }
 .name {
-    width: 50%;
-    height: 300px;
-    margin-bottom: 20px;
-    padding-right: 500px;
-    z-index: 1;
-
+	width: 50%;
+	height: 300px;
+	margin-bottom: 10px;
+	padding-right: 500px;
+	z-index: 1;
+	cursor: pointer;
 }
 .name h1 {
-    width: 200px;
-    font-size: 100px;
-    color: white;
-    text-shadow: 10px 5px 5px rgb(59, 9, 59);
-    font-family: 'Patua One', cursive;
-    transition: 1s ease;
-   
+	width: 200px;
+	font-size: 100px;
+	color: white;
+	text-shadow: 10px 5px 5px rgb(59, 9, 59);
+	font-family: 'Patua One', cursive;
+	transition: 1s ease;
 }
 
+.name h1:hover .first-name,
+.name h1 .last-name {
+	color: purple;
+	transition: 1s ease;
+}
 
-.name h1:hover .first-name, .name h1 .last-name {
-    color: purple;
-    transition: 1s ease;
+.name h1:hover .last-name,
+.name h1 .first-name {
+	color: white;
+	transition: 1s ease;
 }
-.name h1:hover .last-name, .name h1 .first-name {
-    color: white;
-    transition: 1s ease;
+.name h1:hover .body__line1 {
+	background: white;
+	transition: 1.5s ease;
 }
-.name h1:hover .body__line1{
-    background: white;
-    transition: 1.5s ease;
-}
-.name h1:hover .body__line2{
-    background: purple;
-    transition: 1.5s ease;
+.name h1:hover .body__line2 {
+	background: purple;
+	transition: 1.5s ease;
 }
