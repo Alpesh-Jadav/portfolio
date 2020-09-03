@@ -16,7 +16,8 @@
 	cursor: pointer;
 	margin-top: 100px;
 	z-index: 1 !important;
-	background-color: rgb(20, 20, 56);
+	/* background-color: rgb(20, 20, 56); */
+	background-color: rgb(12, 5, 19);
 	overflow: hidden !important;
 }
 
