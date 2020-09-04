@@ -136,3 +136,36 @@
 	background: purple;
 	transition: 1.5s ease;
 }
+
+.icons-container {
+	width: 500px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	/* background-color: white; */
+}
+.icons {
+	display: grid;
+	place-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: rgb(167, 137, 167);
+	transition: .3s ease-in-out;
+	cursor: pointer;
+	border: 2px solid white;
+	
+}
+
+.icons:hover {
+	background-color: rgb(175, 166, 166);
+	transition: .3s ease-in-out;
+	transform: scale(1.1);
+	border: 2px solid purple;
+	box-shadow: 10px 0px 10px 0px rgb(38, 13, 63);
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+}
