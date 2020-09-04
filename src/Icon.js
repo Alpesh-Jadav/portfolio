@@ -1,8 +1,9 @@
 import React from 'react'
 import './Icon.css'
-function Icon({image, svg}) {
+function Icon({image, svg, link}) {
     return (
         <div className="icon">
+             <a href={link} target="_blank">
              <div className="main">
                     <div className="icons">
                         {svg ? svg : <img className="icon" src={image} alt="github" />}
@@ -13,6 +14,7 @@ function Icon({image, svg}) {
                     </div>
 
                 </div>
+             </a>
         </div>
     )
 }
