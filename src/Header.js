@@ -3,7 +3,21 @@ import './Header.css'
 function Header() {
     return (
         <div className="header">
-            <h2>Header...</h2>
+            <div className="header__links">
+                <li>
+                    About
+                    <div className="underline"></div>
+                </li>
+                <li>
+                    resume
+                    <div className="underline"></div>
+                </li>
+                <li>
+                    Projects
+                    <div className="underline"></div>
+                </li>
+              
+            </div>
         </div>
     )
 }
