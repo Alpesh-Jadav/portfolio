@@ -1,5 +1,5 @@
 <br><br>
-# ☻ This project is in development mode. You can get daily update by Following me. Thank You !
+# ☺ This project is in development mode. You can get daily update by Following me. Thank You !
 
 
 
