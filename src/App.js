@@ -10,10 +10,25 @@ import {
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
+    <Router>
+
+      <Switch>
+        <Route exact path="/">
+          <div className="app">
+            <Header />
+            <Body />
+          </div>
+        </Route>
+        <Route path="/project">
+          <div className="app">
+           
+           <Project />
+            
+          </div>
+        </Route>
+      </Switch>
+
+    </Router>
   );
 }
 
