@@ -7,6 +7,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Project from './Project';
+import Resume from './Resume';
+import About from './About';
 
 function App() {
   return (
@@ -19,10 +22,24 @@ function App() {
             <Body />
           </div>
         </Route>
-        <Route path="/project">
+        <Route exact path="/projects">
           <div className="app">
            
            <Project />
+            
+          </div>
+        </Route>
+        <Route exact path="/resume">
+          <div className="app">
+           
+           <Resume />
+            
+          </div>
+        </Route>
+        <Route exact path="/about">
+          <div className="app">
+           
+           <About />
             
           </div>
         </Route>
