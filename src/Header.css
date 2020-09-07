@@ -22,9 +22,12 @@
     font-size: 20px;
     color: white;
     cursor: pointer;
-    text-decoration: none;
+    
 }
-
+.link {
+    text-decoration: none;
+    color: white;
+}
 .underline {
     width: 10px;
     height: 3px;

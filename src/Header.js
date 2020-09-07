@@ -7,21 +7,21 @@ function Header() {
             <div className="header__links">
                
                 <li>
-                <Link to="/projects">
+                <Link to="/projects" className="link">
                     Projects
                     <div className="underline"></div>
                 </Link>
                 </li>
                 
                 <li>
-                <Link to="/resume">
+                <Link to="/resume" className="link">
                      Resume
                     <div className="underline"></div>
                 </Link>
                     
                 </li>
                 <li>
-                    <Link to="/about">
+                    <Link to="/about" className="link">
                       About
                      <div className="underline"></div>
                     </Link>

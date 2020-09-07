@@ -1,9 +1,12 @@
 import React from 'react'
 import './Project.css'
+import ProjectInfo from './ProjectInfo'
 function Project() {
     return (
         <div className="project">
-            <h1>Projects</h1>
+            <div className="project__container">
+                <ProjectInfo />
+            </div>
         </div>
     )
 }

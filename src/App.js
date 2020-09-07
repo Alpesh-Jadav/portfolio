@@ -24,14 +24,14 @@ function App() {
         </Route>
         <Route exact path="/projects">
           <div className="app">
-           
+          <Header />
            <Project />
             
           </div>
         </Route>
         <Route exact path="/resume">
           <div className="app">
-           
+          <Header />
            <Resume />
             
           </div>
